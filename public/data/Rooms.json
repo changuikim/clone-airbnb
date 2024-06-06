@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "price": 100,
+    "roomType": "방",
+    "bedrooms": 2,
+    "beds": 3,
+    "bathrooms": 1,
+    "amenities": ["무선 인터넷", "에어컨"],
+    "bookingOptions": ["즉시 예약"],
+    "buildingType": "아파트",
+    "name": "Alice",
+    "age": 25,
+    "city": "New York"
+  },
+  {
+    "id": 2,
+    "price": 200,
+    "roomType": "집 전체",
+    "bedrooms": 3,
+    "beds": 4,
+    "bathrooms": 2,
+    "amenities": ["세탁기", "주방"],
+    "bookingOptions": ["셀프 체크인"],
+    "buildingType": "단독 또는 다세대 주택",
+    "name": "Bob",
+    "age": 30,
+    "city": "San Francisco"
+  },
+  {
+    "id": 3,
+    "price": 150,
+    "roomType": "방",
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 1,
+    "amenities": ["무선 인터넷", "세탁기"],
+    "bookingOptions": ["즉시 예약"],
+    "buildingType": "아파트",
+    "name": "Carol",
+    "age": 28,
+    "city": "Los Angeles"
+  },
+  {
+    "id": 4,
+    "price": 250,
+    "roomType": "집 전체",
+    "bedrooms": 4,
+    "beds": 5,
+    "bathrooms": 3,
+    "amenities": ["에어컨", "주방"],
+    "bookingOptions": ["즉시 예약"],
+    "buildingType": "단독 또는 다세대 주택",
+    "name": "Dave",
+    "age": 35,
+    "city": "Chicago"
+  },
+  {
+    "id": 5,
+    "price": 120,
+    "roomType": "방",
+    "bedrooms": 2,
+    "beds": 2,
+    "bathrooms": 1,
+    "amenities": ["무선 인터넷", "주방"],
+    "bookingOptions": ["셀프 체크인"],
+    "buildingType": "아파트",
+    "name": "Eve",
+    "age": 32,
+    "city": "Boston"
+  }
+]
