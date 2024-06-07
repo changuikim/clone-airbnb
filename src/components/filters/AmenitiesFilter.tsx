@@ -4,7 +4,7 @@ import { setAmenitiesFilter } from '@/redux/slices/amenitiesFilterSlice'
 import { RootState } from '@/redux/store'
 import { amenitiesList } from '@/utils/FilterItems'
 
-const AmenitiesFilterComponent: React.FC = () => {
+function AmenitiesFilter(): React.ReactElement {
   const dispatch = useDispatch()
   const amenitiesFilter = useSelector(
     (state: RootState) => state.amenitiesFilter,
@@ -22,11 +22,11 @@ const AmenitiesFilterComponent: React.FC = () => {
 
   return (
     <div className='p-4'>
-      <label className='mb-2 block text-sm font-medium text-gray-700'>
+      <label className='block mb-2 text-sm font-medium text-gray-700'>
         편의시설
       </label>
       {amenitiesList.map(amenity => (
-        <label key={amenity} className='mt-2 inline-flex items-center'>
+        <label key={amenity} className='inline-flex items-center mt-2'>
           <input
             type='checkbox'
             name='amenities'
@@ -42,4 +42,4 @@ const AmenitiesFilterComponent: React.FC = () => {
   )
 }
 
-export default AmenitiesFilterComponent
+export default AmenitiesFilter

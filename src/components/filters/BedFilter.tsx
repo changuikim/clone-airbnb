@@ -7,7 +7,7 @@ import {
 } from '@/redux/slices/bedFilterSlice'
 import { RootState } from '@/redux/store'
 
-const BedFilterComponent: React.FC = () => {
+function BedFilter(): React.ReactElement {
   const dispatch = useDispatch()
   const { bedrooms, beds, bathrooms } = useSelector(
     (state: RootState) => state.bedFilter,
@@ -69,4 +69,4 @@ const BedFilterComponent: React.FC = () => {
   )
 }
 
-export default BedFilterComponent
+export default BedFilter

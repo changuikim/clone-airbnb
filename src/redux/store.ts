@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { apiSlice } from '@/redux/apiSlice'
-import priceFilterReducer from '@/redux/slices/priceFilterSlice'
+import modalReducer from '@/redux/slices/modalSlice'
+import priceRangeFilterReducer from '@/redux/slices/priceRangeFilterSlice'
 import roomTypeFilterReducer from '@/redux/slices/roomTypeFilterSlice'
 import bedFilterReducer from '@/redux/slices/bedFilterSlice'
 import amenitiesFilterReducer from '@/redux/slices/amenitiesFilterSlice'
@@ -9,12 +10,13 @@ import filterReducer from '@/redux/slices/filterSlice'
 const store = configureStore({
   reducer: {
     // ES6+ 문법의 Computed Property Names를 사용하여 동적으로 apiSlice를 추가합니다.
-    [apiSlice.reducerPath]: apiSlice.reducer,
-    priceFilter: priceFilterReducer,
+    modal: modalReducer,
+    filter: filterReducer,
+    priceRangeFilter: priceRangeFilterReducer,
     roomTypeFilter: roomTypeFilterReducer,
     bedFilter: bedFilterReducer,
     amenitiesFilter: amenitiesFilterReducer,
-    filter: filterReducer,
+    [apiSlice.reducerPath]: apiSlice.reducer,
   },
   // Redux의 미들웨어는 액션이 리듀서에 도달하기 전에 가로채서 처리하는 함수입니다.
   middleware: getDefaultMiddleware =>

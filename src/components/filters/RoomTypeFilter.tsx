@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setRoomTypeFilter } from '@/redux/slices/roomTypeFilterSlice'
 import { RootState } from '@/redux/store'
 
-const RoomTypeFilterComponent: React.FC = () => {
+function RoomTypeFilter(): React.ReactElement {
   const dispatch = useDispatch()
   const roomTypeFilter = useSelector(
     (state: RootState) => state.roomTypeFilter.roomType,
@@ -39,4 +39,4 @@ const RoomTypeFilterComponent: React.FC = () => {
   )
 }
 
-export default RoomTypeFilterComponent
+export default RoomTypeFilter

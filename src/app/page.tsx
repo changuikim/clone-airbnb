@@ -1,9 +1,9 @@
-import FilterComponent from '@/components/FilterComponent'
+import FilterButton from '@/components/buttons/FilterButton'
 
 const Home: React.FC = () => (
   <main>
-    <h1>Data Filtering Example</h1>
-    <FilterComponent />
+    <h1>필터 모달 테스트</h1>
+    <FilterButton />
   </main>
 )
 

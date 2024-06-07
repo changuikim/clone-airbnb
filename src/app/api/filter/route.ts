@@ -59,8 +59,8 @@ export async function GET(req: NextRequest) {
     const itemBookingOptions = new Set(item.bookingOptions)
 
     return (
-      (filters.priceMin === null || item.price >= filters.priceMin) &&
-      (filters.priceMax === null || item.price <= filters.priceMax) &&
+      (filters.priceMin === null || item.pricePerDay >= filters.priceMin) &&
+      (filters.priceMax === null || item.pricePerDay <= filters.priceMax) &&
       (filters.roomType === '' || item.roomType === filters.roomType) &&
       (filters.bedrooms === null || item.bedrooms === filters.bedrooms) &&
       (filters.beds === null || item.beds === filters.beds) &&

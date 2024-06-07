@@ -16,7 +16,7 @@ export interface Filters {
 export interface Room {
   id: number
   name: string
-  price: number
+  pricePerDay: number
   roomType: string
   bedrooms: number
   beds: number
